@@ -19,6 +19,25 @@ export const getNetworkName = (chainId: string | null) => {
   }
 };
 
+export const getNetworkNameLongo = (chainId: string | null) => {
+  switch (chainId) {
+    case "0x1":
+      return "ethereum-eth-logo.png" 
+    case "0x2a":
+      return "1.png";
+    case "0x4":
+      return "rinkeby.png";
+    case "0x38":
+      return "binance-usd-busd-logo.png";
+    case "0x61":
+      return "binance-usd-busd-logo.png";
+    case "0x6545":
+      return "16093.png";
+    default:
+      return "Unknown network";
+  }
+};
+
 export const getNetworkCurrency = (chainId: string | null) => {
   switch (chainId) {
     case "0x38":
